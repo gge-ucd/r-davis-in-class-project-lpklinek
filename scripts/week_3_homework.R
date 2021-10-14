@@ -26,6 +26,8 @@ plot_type_factor <- factor(surveys_base$plot_type)
 # removing all the rows with NA in the weight column
 surveys_base_noNA <- surveys_base[!is.na(surveys_base)]
 surveys_base_noNA
+# or, for just weight column
+surveys_base_noNA <- na.omit(surveys_base,surveys_base$weight)
 
 # challenge -- selecting individuals with weights greater than 150
 challenge_base <- surveys_base[(surveys_base[, 2]>150),]
