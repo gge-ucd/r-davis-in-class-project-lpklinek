@@ -14,7 +14,7 @@ surveys <- read_csv("data/portal_data_joined.csv")
 
 # 2
 # Subset surveys to keep rows with weight between 30 and 60, and print out the first 6 rows.
-head(filter(surveys, weight > 30, weight < 60))
+head(filter(surveys, weight > 30 & weight < 60))
 
 # 3
 # Create a new tibble showing the maximum weight for each species + sex combination and name
