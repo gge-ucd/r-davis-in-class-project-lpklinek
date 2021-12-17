@@ -43,3 +43,16 @@ sample_dates_lub2 <- mdy(sample_dates_2) #lubridate can handle it!
 
 # import raw dataset & specify column types
 # see lecture materials for rest of the example code
+
+
+
+
+
+
+
+
+# Writing functions
+
+
+
+
